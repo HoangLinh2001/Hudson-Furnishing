@@ -1,0 +1,132 @@
+<link rel="stylesheet" href="css/contact.css">
+
+<body>
+    <div class="contactus"></div>
+    <div class="box">
+        <!-- phan nhap lieu -->
+        <div class="contact form">
+            <h2>Send Messenger</h2>
+            <form>
+                <div class="formBox">
+                    <div class="row50">
+                        <div class="inputBox">
+                            <span>
+                                Name
+                            </span>
+                            <div class="blue">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="Your Name" size="60">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row50">
+                        <div class="inputBox">
+                            <span>
+                                Telephone
+                            </span>
+                            <div class="blue">
+                                <i class="fa-solid fa-phone"></i>
+                                <input type="text" placeholder="Your Telephone" size="60">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row50">
+                        <div class="inputBox">
+                            <span>
+                                Email
+                            </span>
+                            <div class="blue">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="text" placeholder="Your Email" size="60">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputBox">
+                            <span>
+                                Messenger
+                            </span>
+                            <textarea placeholder="Write your messenge here..."></textarea>
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputBox">
+                            <input type="submit" value="Send">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- ket thuc phan nhap lieu -->
+        <!-- phan thong tin lien he -->
+        <div class="contact info">
+            <h2>Contact Info</h2>
+            <div class="infoBox">
+                <div class="blue">
+                    <span> <i class="fa-solid fa-location-dot"></i></span>
+                    <a
+                        href="map:https://www.google.com/maps/place/FPT-Aptech+Computer+Education+HCM/@10.7868348,106.6640856,17z/data=!3m1!4b1!4m5!3m4!1s0x31752ed2392c44df:0xd2ecb62e0d050fe9!8m2!3d10.7868348!4d106.6662743">CMT8
+                        Street District 3 HCM City</a>
+                </div>
+                <div class="blue">
+                    <span> <i class="fa-solid fa-envelope"></i> </span>
+                    <a href="mailto:linhhnhts2210018@fpt.edu.vn">linhhnhts2210018@fpt.edu.vn</a>
+                </div>
+                <div class="blue">
+                    <span> <i class="fa-solid fa-phone"></i></span>
+                    <a href="tel:123456789">+84 939 810 302</a>
+                </div>
+                <div>
+                </div>
+                <ul class="sci">
+                    <li> <a href="https://www.facebook.com/Hoanglinh071201"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li> <a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- ket thuc phan thong tin lien he -->
+
+        <!-- map -->
+        <div class="contact map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3193500366788!2d106.66408561395828!3d10.786834792314457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed2392c44df%3A0xd2ecb62e0d050fe9!2sFPT-Aptech%20Computer%20Education%20HCM!5e0!3m2!1sen!2s!4v1662909699052!5m2!1sen!2s"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <!-- ket thuc map -->
+    </div>
+    <div class="contactfaq">
+        <section>
+            <h2>FAQ's</h2>
+            <div class="faq">
+                <div class="question">
+                    <h3>Do you issue a prepaid card to be used as an alternative to cash when making purchases in your
+                        store?</h3>
+
+                    <svg width="15" heigh="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="while" stroke-width="7" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>
+                        We do issue prepaid cards to be used as an alternative to cash on purchases. Please contact us
+                        if you have other questions
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script>
+    const faqs = document.querySelectorAll(".faq");
+
+    faqs.forEach(faq => {
+        faq.addEventListener("click", () => {
+            faq.classList.toggle("active")
+        })
+    })
+</script>

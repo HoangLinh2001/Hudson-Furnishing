@@ -1,0 +1,162 @@
+<div class="container-fluid">
+    <!-- <div class="row"> -->
+    <link rel="stylesheet" href="css/product.css" />
+    <form class="formstyle">
+        <div class="row">
+            <div class="col-6">
+                <br>
+                <div class="input-group mb-3 input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-warning font-weight-bold">SEARCH</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Input a product" ng-model="test.title">
+                </div>
+            </div>
+            <div class="col-2">
+                <br>
+                <input type="radio" name="sortcode" id="A-Z" value="title" ng-model="sortCode" />
+                <label for="A-Z" class="bg-warning">SORT: A-Z</label>
+            </div>
+            <div class="col-2">
+                <br>
+                <input type="radio" name="sortcode" id="Price" value="price" ng-model="sortCode" />
+                <label for="Price" class="bg-warning">PRICE</label>
+            </div>
+            <div class="col-2">
+                <br>
+                <input type="radio" onclick="reload_page()" id="Reset" value="Reset">
+                <label for="Reset" class="bg-danger">RESET</label>
+                <script>
+                    function reload_page() {
+                        location.reload();
+                    }
+                </script>
+            </div>
+
+            <div class="col-4">
+                <br>
+                <h3><span class="badge badge-pill badge-warning">CATEGORY</span></h3>
+                <select name="category" class="custom-select" ng-model="category">
+                    <option id="Ceiling fans" value="Ceiling fans">Motorcycle</option>
+                    <option id="Exhaust fans" value="Exhaust fans">SUV</option>
+                    <option id="Pedestal fans" value="Pedestal fans">Super</option>
+                    <option id="Wall fans" value="Wall fans">Sport</option>
+                </select>
+            </div>
+
+            <div class="col-4">
+                <br>
+                <h3><span class="badge badge-pill badge-warning">BRAND</span></h3>
+                <select name="brand" class="custom-select" ng-model="brand">
+                    <option id="BMW" value="BMW">BMW</option>
+                    <option id="Yamaha" value="Yamaha">Yamaha</option>
+                    <option id="HonDa" value="HonDa">HonDa</option>
+                    <option id="Lamborghini" value="Lamborghini">Lamborghini</option>
+                    <option id="Porsche" value="Porsche">Porsche</option>
+                    <option id="McLaren" value="McLaren">McLaren</option>
+                    <option id="Ferrari" value="Ferrari">Ferrari</option>
+                    <option id="Chevrolet" value="Chevrolet">Chevrolet</option>
+                    <option id="VinFast" value="VinFast">VinFast</option>
+                    <option id="Toyota" value="Toyota">Toyota</option>
+                    <option id="Isuzu" value="Isuzu">Isuzu</option>
+                    <option id="KIA" value="KIA">KIA</option>
+                    <option id="Mercedes" value="Mercedes">Mercedes</option>
+                    <option id="Volvo" value="Volvo">Volvo</option>
+                    <option id="Mustang" value="Mustang">Mustang</option>
+                </select>
+            </div>
+            <div class="col-4">
+                <br>
+                <h3><span class="badge badge-pill badge-warning">COLOR</span></h3>
+                <select name="fanColor" class="custom-select" ng-model="fanColor">
+                    <option id="fanSilver" value="fanSilver">fanSilver</option>
+                    <option id="fanWhite" value="fanWhite">fanWhite</option>
+                    <option id="fanBlack" value="fanBlack">fanBlack</option>
+                    <option id="fanRed" value="fanRed">fanRed</option>
+                    <option id="fanYellow" value="fanYellow">fanYellow</option>
+                </select>
+            </div>
+
+        </div>
+    </form>
+    <hr style="border-width:0.25rem;">
+    <div class="card-deck" class="row">
+        <div class="product"
+            ng-repeat="item in listProduct | filter:test | filter:brand | filter:category | filter:fanColor | orderBy:sortCode"
+            ng-click=show(item.id) data-toggle="modal" data-target="#myModal">
+            <div class="card" style="width: 16rem;">
+                <div class="card-header">
+                    <h3 class="card-title text-center"><span
+                            class="badge badge-pill badge-info">{{item.category}}</span></h3>
+                </div>
+
+                <div>
+                    <img class="card-img-top" class="img-fluid" src="{{item.picture}}" alt="Card image"
+                        style="width:100%">
+                </div>
+
+                <div class="card-body text-center">
+                    <h4 class="card-title">{{item.title}}</h4>
+                    <h3 class="card-title"><span class="badge badge-success">{{item.price}}$</span></h3>
+
+                </div>
+
+                <div class="card-footer">
+                    <!-- Button to Open the Modal -->
+                    <input type="button" class="btn btn-info btn-block font-weight-bold" id="myBtn" value="Quick View">
+                </div>
+
+            </div>
+            <br>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-lg modal-dialog-centered ">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title"></h4>
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="{{picture}}" style="width: 100%;" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <h2 class="text-black-1 text-center">{{title}}</h2>
+                                <h4 class="brand-name-2"><span class="badge badge-warning">Price</span><span
+                                        class="badge badge-success">{{price}}$</span></h4>
+                                <h4 class="brand-name-2"><span class="badge badge-warning">Brand:</span><span
+                                        class="badge badge-info">{{brand}}</span></h4>
+                                <h4 class="brand-name-2"><span class="badge badge-warning">Category:</span><span
+                                        class="badge badge-info">{{category}}</span></h4>
+                                <h4 class="brand-name-2"><span class="badge badge-warning">Color:</span><span
+                                        class="badge badge-info">{{fanColor}}</span></h4>
+
+                                <div role="tabpanel" class="tab-pane active">
+                                    <h4 class="brand-name-2"><span class="badge badge badge-warning">Description:</span>
+                                    </h4>
+                                    <p id="description">{{description}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success font-weight-bold">Buy</button>
+                        <button type="button" class="btn btn-danger font-weight-bold"
+                            data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

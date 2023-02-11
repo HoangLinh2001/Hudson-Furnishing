@@ -1,0 +1,10 @@
+{
+    "about": [
+        {   "id":1,
+            "name": "Hoang Linh",
+            "gmail": "linhhnhts2210018@fpt.edu.vn",
+            "image":"imgabout/me.jpg",
+            "telephone": "012385689"
+        }
+    ]
+}

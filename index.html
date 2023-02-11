@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eProject</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+
+<body ng-app="myAPP">
+    <header>
+        <nav class="navbar navbar-inverse">
+
+            <nav class="link ">
+                <a href="#/!">Home</a>
+                <a href="#!product">Product</a>
+                <a href="#!about">About Us</a>
+                <a href="#!contact">Contact Us</a>
+            </nav>
+            <nav>
+                <a class="signin" href="#!signin"><button>Sign In</button> </a>
+                <img class="logo" src="img/logo-L17 (1).jpg" alt="">
+                <a class="navbar website-counter fas fa-user-alt"></a>
+            </nav>
+        </nav>
+    </header>
+
+    <main>
+        <div ng-view></div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container1">
+            <div class="row">
+                <div class="footer-col">
+                    <h2>company</h2>
+                    <ul>
+                        <li><a href="#/!">Home</a></li>
+                        <li><a href="#!product">Product</a></li>
+                        <li><a href="#!about">About us</a></li>
+                        <li><a href="#!contact">Contact us</a></li>
+                        <li><a href="#!signin">Sign In</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h2>get help</h2>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order status</a></li>
+                        <li><a href="#">Payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h2>online shop</h2>
+                    <ul>
+                        <li><a href="">Ceiling fans</a></li>
+                        <li><a href="">Pedestal fans</a></li>
+                        <li><a href="">Wall fans</a></li>
+                        <li><a href="">Exhaust fans</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h2>follow us</h2>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="datetime" onload="initclock()">
+                        <div class="date">
+                            <span id="daynum"></span>,
+                            <span id="month"></span>
+                            <span id="day"></span>
+                            <span id="year"></span>
+                        </div>
+                        <div class="time">
+                            <span id="hour"></span>:
+                            <span id="minutes"></span>:
+                            <span id="seconds"></span>
+                            <span id="period">AM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll">
+            <!-- scroll start -->
+            <p id="clock"></p>
+            <script>
+                setInterval(myTimer, 1000);
+
+                function myTimer() {
+                    const d = new Date();
+                    document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+                }
+            </script>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+        </div>
+    </footer>
+
+    <script>
+        var app = angular.module("myAPP", ["ngRoute"]);
+        app.config(function ($routeProvider) {
+            $routeProvider
+                .when("/", {
+                    templateUrl: "home.html"
+                })
+                .when("/product", {
+                    templateUrl: "product.html",
+                    controller: "productCtrl"
+                })
+                .when("/about", {
+                    templateUrl: "about.html",
+                    controller: "aboutCtrl"
+                })
+                .when("/signin", {
+                    templateUrl: "signIn.html"
+                })
+                .when("/contact", {
+                    templateUrl: "contact.html"
+                });
+        });
+
+        // VisitCount
+        var counterContainer = document.querySelector(".website-counter");
+        var resetButton = document.querySelector("#reset");
+        var visitCount = localStorage.getItem("page_view");
+
+        if (visitCount) {
+            visitCount = Number(visitCount) + 1;
+            localStorage.setItem("page_view", visitCount);
+        } else {
+            visitCount = 1;
+            localStorage.setItem("page_view", 1);
+        }
+        counterContainer.innerHTML = visitCount;
+
+
+        //home-time footer
+        function clock() {
+            var dateTime = new Date();
+            var daynum = dateTime.getDay(),
+                day = dateTime.getDate(),
+                mon = dateTime.getMonth() + 1,
+                year = dateTime.getFullYear(),
+                hou = dateTime.getHours(),
+                min = dateTime.getMinutes(),
+                sec = dateTime.getSeconds();
+
+            if (hou == 0) {
+                hou = 12;
+            }
+            if (hou > 12) {
+                hou = hou - 12;
+                document.getElementById('period').innerHTML = "PM";
+            }
+
+            switch (daynum) {
+                case 0:
+                    daynum = "Sunday";
+                    break;
+                case 1:
+                    daynum = "Monday";
+                    break;
+                case 2:
+                    daynum = "Tuesday";
+                    break;
+                case 3:
+                    daynum = "Wednesday";
+                    break;
+                case 4:
+                    daynum = "Thursday";
+                    break;
+                case 5:
+                    daynum = "Friday";
+                    break;
+                case 6:
+                    daynum = "Saturday";
+                    break;
+            }
+            document.getElementById("daynum").innerHTML = daynum;
+            document.getElementById("day").innerHTML = day;
+            document.getElementById("month").innerHTML = mon;
+            document.getElementById("year").innerHTML = year;
+            document.getElementById("hour").innerHTML = hou;
+            document.getElementById("minutes").innerHTML = min;
+            document.getElementById("seconds").innerHTML = sec;
+        }
+        setInterval(clock, 10);
+
+        function initclock() {
+            clock();
+            window.setInterval("clock()", 1)
+        }
+
+        // scroll start
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        //product
+        app.run(function ($rootScope, $http) {
+            //load du lieu tu file json (product.json) -> model [listProduct]
+            $http.get("product.json").then(function (response) {
+                $rootScope.listProduct = response.data.products;
+            });
+        });
+
+        app.controller("productCtrl", function ($scope, $rootScope) {
+            $scope.show = function (id) {
+                let data = $rootScope.listProduct;
+                let item = data.find(v => v.id == id);
+
+                $scope.brand = item.brand;
+                $scope.picture = item.picture;
+                $scope.title = item.title;
+                $scope.category = item.category;
+                $scope.fanColor = item.fanColor;
+                $scope.price = item.price;
+                $scope.description = [];
+
+                for (let i = 0; i < item.description.length; i++) {
+                    $scope.description += item.description[i];
+                }
+
+            };
+        });
+
+        //about us
+        app.run(function ($rootScope, $http) {
+            $http.get("about.json").then(function (response) {
+                $rootScope.about = response.data.about;
+                console.log($rootScope.about);
+            });
+        });
+
+        app.controller("aboutCtrl", function ($scope, $rootScope) {
+            $scope.showA = function (id) {
+                let aboutdata = $rootScope.about;
+                let person = aboutdata.find(a => a.id == id);
+
+                $scope.name = person.name;
+                $scope.gmail = person.gmail;
+                $scope.telephone = person.telephone;
+                $scope.image = person.image;
+
+                console.log(about);
+            }
+        });
+    </script>
+</body>
+
+</html>
