@@ -7,7 +7,7 @@ Project title: Hudson Furnishing
 
 ========> Group 1 <=========
 
-4 collaborators:
+1 collaborators:
 
     Ho Nguyen Hoang Linh              Student1429104
 
