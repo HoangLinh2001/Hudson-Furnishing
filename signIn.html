@@ -57,7 +57,7 @@
                     </div>
                 </div>
                 <div >
-                    <input type="submit" >
+                    <input type="submit" value="submit">
                     <input type="reset" value="reset">
                 </div>
             </form>
@@ -76,7 +76,7 @@
         let pass2 = document.getElementById("pass2").value.trim();
 
         if (pass1 != pass2) {
-            alert("Mat khau va Mat Khau nhap lai ko giong nhau ! Vui long nhap lai !");
+            alert("Password and Re-entered Password are not the same! Please try again !");
             document.getElementById("pass").focus();
             return false;
         }
