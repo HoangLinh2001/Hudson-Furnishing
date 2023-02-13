@@ -2,12 +2,12 @@
     "products": [
         {   "id":1,
             "brand": "Honda",
-            "picture": "imgproduct/Ceiling fans/num1-ICF Series lndustrial.jpg",
+            "picture": "imgproduct/Motorcycle/num1-ICF Series lndustrial.jpg",
             "title": "MV Agusta F4 RR",
-            "category": "Motorcyclercycle",
+            "category": "Motorcycle",
             "fanColor": "fanBlack",
             "price": 200,
-            "description": ["Matchingpermanent magnet external rotor Motorcycler, high efficiency and energy saving, light weight and stepless speed regulation. ", 
+            "description": ["Matchingpermanent magnet external rotor Motorcyclercycler, high efficiency and energy saving, light weight and stepless speed regulation. ", 
             "Blade is designed with high lift-resistance ration aviation airfoil with large air volume, high efficiency, uniform airpressure and large coverage area. ", 
             "Blade is made of aviationpolymer composite material with light weight, high safety and easy installation. ",    
             "Theproduct adopts 12 safetyprotection ,making it safer and more durable. "]
@@ -15,7 +15,7 @@
         {
             "id":2,
             "brand":"Yamaha",
-            "picture": "imgproduct/Ceiling fans/num2-Amped.jpg",
+            "picture": "imgproduct/Motorcycle/num2-Amped.jpg",
             "title": "Kawasaki Ninja H2R",
             "category": "Motorcycle",
             "fanColor": "fanSilver",
@@ -29,7 +29,7 @@
         {
             "id":3,
             "brand":"BMW",
-            "picture": "imgproduct/Ceiling fans/num3-Kwartet.jpg",
+            "picture": "imgproduct/Motorcycle/num3-Kwartet.jpg",
             "title": "BMW 1000",
             "category": "Motorcycle",
             "fanColor": "fanRed",
@@ -43,7 +43,7 @@
         {
             "id":4,
             "brand":"Honda",
-            "picture": "imgproduct/Ceiling fans/num4-Kerring.jpg",
+            "picture": "imgproduct/Motorcycle/num4-Kerring.jpg",
             "title": "Kerring",
             "category": "Motorcycle",
             "fanColor": "fanSilver",
@@ -57,7 +57,7 @@
         {
             "id":5,
             "brand": "Ferrari",
-            "picture": "imgproduct/Pedestal fans/num1-DFK Series Powerful Fan.jpg",
+            "picture": "imgproduct/Super/num1-DFK Series Powerful Fan.jpg",
             "title": "Ferrari 296 GTB",
             "category": "Super",
             "fanColor": "fanRed",
@@ -71,7 +71,7 @@
         {
             "id":6,
             "brand": "Porsche",
-            "picture": "imgproduct/Pedestal fans/num2-Misting Fan.jpg",
+            "picture": "imgproduct/Super/num2-Misting Fan.jpg",
             "title": "Porsche 911 GT3 RS",
             "category": "Super",
             "fanColor": "fanRed",
@@ -86,13 +86,13 @@
         {
             "id":7,
             "brand": "Ferrari",
-            "picture": "imgproduct/Pedestal fans/num4-Air King Oscillating Office Pedestal Fan.jpg",
+            "picture": "imgproduct/Super/num4-Air King Oscillating Office Pedestal Fan.jpg",
             "title": "Ferrari F8 Tributo",
             "category": "Super",
             "fanColor": "fanRed",
             "price": 109,
-            "description": ["Oscillating officepedestal fans cool clean, dry environments using apivoting fan head that turns from side to side to blow air over a wider area than non-oscillating fans. The fan head can also be locked in a fixedposition for targeted cooling. ",
-            "Officepedestal fans have a sturdy base and an adjustable-heightpost, so they can beplaced on the floor and directed where needed. ",
+            "description": ["Oscillating officeSuper cool clean, dry environments using apivoting fan head that turns from side to side to blow air over a wider area than non-oscillating fans. The fan head can also be locked in a fixedposition for targeted cooling. ",
+            "OfficeSuper have a sturdy base and an adjustable-heightpost, so they can beplaced on the floor and directed where needed. ",
             "Thepedestal basesprovide stable footing without requiringpermanent installation, so the fans can be moved when necessary. ",
             "Theposts can be raised and lowered to set fan heads at an optimal height. ",
             "These cooling fans have a Motorcycler that rotates the fan blades to move air and a guard that helpsprotect the blades from damage andprevent injuries from accidental contact. "]
@@ -100,7 +100,7 @@
         {
             "id":8,
             "brand": "McLaren",
-            "picture": "imgproduct/Pedestal fans/num5-Axial Misting Fan.jpg",
+            "picture": "imgproduct/Super/num5-Axial Misting Fan.jpg",
             "title": "McLaren Huracan Tecnica ",
             "category": "Super",
             "fanColor": "fanBlack",
@@ -117,7 +117,7 @@
         {
             "id":9,
             "brand": "McLaren",
-            "picture": "imgproduct/Pedestal fans/num6-CF Series Commercial Fan.jpg",
+            "picture": "imgproduct/Super/num6-CF Series Commercial Fan.jpg",
             "title": "McLaren Artura",
             "category": "Super",
             "fanColor": "fanBlack",
@@ -131,7 +131,7 @@
         {
             "id":10,
             "brand": "Lamborghini",
-            "picture": "imgproduct/Pedestal fans/num7-Arden.jpg",
+            "picture": "imgproduct/Super/num7-Arden.jpg",
             "title": "Lamborghini 812",
             "category": "Super",
             "fanColor": "fanBlack",
@@ -145,7 +145,7 @@
         {
             "id":11,
             "brand": "Toyota",
-            "picture": "imgproduct/Wall fans/num2-Air King 9070 30-Inch Industrial Grade Wall Mount Fan.jpg",
+            "picture": "imgproduct/Sport/num2-Air King 9070 30-Inch Industrial Grade Wall Mount Fan.jpg",
             "title": "Subaru BRZ",
             "category": "Sport",
             "fanColor": "fanWhite",
@@ -159,7 +159,7 @@
         {
             "id":12,
             "brand": "Toyota",
-            "picture": "imgproduct/Wall fans/num3-XDF-45 Orbit Fan.jpg",
+            "picture": "imgproduct/Sport/num3-XDF-45 Orbit Fan.jpg",
             "title": "Toyota GR86",
             "category": "Sport",
             "fanColor": "fanRed",
@@ -174,7 +174,7 @@
         {
             "id":12,
             "brand": "Toyota",
-            "picture": "imgproduct/Wall fans/num4-Air King 9318 Industrial Grade High Velocity Muti Mount Fan.jpg",
+            "picture": "imgproduct/Sport/num4-Air King 9318 Industrial Grade High Velocity Muti Mount Fan.jpg",
             "title": "Toyota Supra",
             "category": "Sport",
             "fanColor": "fanWhite",
@@ -187,7 +187,7 @@
         {
             "id":14,
             "brand": "chevrolet",
-            "picture": "imgproduct/Wall fans/num5-Air King 9018 Commercial Grade Oscillating Wall Mount Fan.jpg",
+            "picture": "imgproduct/Sport/num5-Air King 9018 Commercial Grade Oscillating Wall Mount Fan.jpg",
             "title": "chevrolet Camaro",
             "category": "Sport",
             "fanColor": "fanBlack",
@@ -200,7 +200,7 @@
         {
             "id":15,
             "brand": "chevrolet",
-            "picture": "imgproduct/Wall fans/num6-Air King Home Garage Steel Wall Mounted Fan.jpg",
+            "picture": "imgproduct/Sport/num6-Air King Home Garage Steel Wall Mounted Fan.jpg",
             "title": "chevrolet Camaro ZL1",
             "category": "Sport",
             "fanColor": "fanYellow",
@@ -213,7 +213,7 @@
         {
             "id":16,
             "brand": "Mustang",
-            "picture": "imgproduct/Wall fans/num7-Air King 16 Wall Mount Fan.jpg",
+            "picture": "imgproduct/Sport/num7-Air King 16 Wall Mount Fan.jpg",
             "title": "Ford Mustang Shelby GT500",
             "category": "Sport",
             "fanColor": "fanBlack",
@@ -225,7 +225,7 @@
         {
             "id":17,
             "brand": "Mustang",
-            "picture": "imgproduct/Wall fans/num8-Air King 9166F 20 Whole House Window Fan.jpg",
+            "picture": "imgproduct/Sport/num8-Air King 9166F 20 Whole House Window Fan.jpg",
             "title": "Ford Mustang",
             "category": "Sport",
             "fanColor": "fanBlack",
@@ -236,7 +236,7 @@
         {
             "id":18,
             "brand": "Toyota",
-            "picture": "imgproduct/Exhaust fans/num1-HVD Series High Velocity.jpg",
+            "picture": "imgproduct/SUV/num1-HVD Series High Velocity.jpg",
             "title": "Toyota Corolla Cross 2023",
             "category": "SUV",
             "fanColor": "fanBlack",
@@ -253,7 +253,7 @@
         {
             "id":19,
             "brand": "Isuzu",
-            "picture": "imgproduct/Exhaust fans/num2-LAD Series Square.jpg",
+            "picture": "imgproduct/SUV/num2-LAD Series Square.jpg",
             "title": "Isuzu mu-X 2022",
             "category": "SUV",
             "fanColor": "fanWhite",
@@ -268,7 +268,7 @@
         {
             "id":20,
             "brand": "BMW",
-            "picture": "imgproduct/Exhaust fans/num3-FQ Series Heavy Duty.jpg",
+            "picture": "imgproduct/SUV/num3-FQ Series Heavy Duty.jpg",
             "title": "BMW X3 2021",
             "category": "SUV",
             "fanColor": "fanBlack",
@@ -282,7 +282,7 @@
         {
             "id":21,
             "brand": "Toyota",
-            "picture": "imgproduct/Exhaust fans/num4-VND Series Square.jpg",
+            "picture": "imgproduct/SUV/num4-VND Series Square.jpg",
             "title": "Toyota Fortuner 2022",
             "category": "SUV",
             "fanColor": "fanWhite",
@@ -297,7 +297,7 @@
         {
             "id":22,
             "brand": "KIA",
-            "picture": "imgproduct/Exhaust fans/num5-iPower 12 Inch Exhaust Fan Aluminum.jpg",
+            "picture": "imgproduct/SUV/num5-iPower 12 Inch Exhaust Fan Aluminum.jpg",
             "title": "KIA Sorento 2023",
             "category": "SUV",
             "fanColor": "fanBlack",
@@ -311,7 +311,7 @@
         {
             "id":23,
             "brand": "Volvo",
-            "picture": "imgproduct/Exhaust fans/num6-iPower 12 Inch Shutter Exhaust Fan Aluminum.jpg",
+            "picture": "imgproduct/SUV/num6-iPower 12 Inch Shutter Exhaust Fan Aluminum.jpg",
             "title": "Volvo XC40 2021",
             "category": "SUV",
             "fanColor": "fanWhite",
@@ -325,7 +325,7 @@
         {
             "id":24,
             "brand": "Mercedes",
-            "picture": "imgproduct/Exhaust fans/num7-iPower 12 Inch Inline Duct HVAC Exhaust Blower Ventilation Fan.jpg",
+            "picture": "imgproduct/SUV/num7-iPower 12 Inch Inline Duct HVAC Exhaust Blower Ventilation Fan.jpg",
             "title": "Mercedes GLC 2021",
             "category": "SUV",
             "fanColor": "fanWhite",
@@ -339,7 +339,7 @@
         {
             "id":25,
             "brand": "VinFast",
-            "picture": "imgproduct/Exhaust fans/num8-iPower 4 Inch 195 CFM Inline Ventilation Exhaust Fan.jpg",
+            "picture": "imgproduct/SUV/num8-iPower 4 Inch 195 CFM Inline Ventilation Exhaust Fan.jpg",
             "title": "VinFast Lux SA2.0 2021",
             "category": "SUV",
             "fanColor": "fanBlack",
