@@ -35,8 +35,8 @@
 
             <div class="col-4">
                 <br>
-                <h3><span class="badge badge-pill badge-warning">CATEGORY</span></h3>
-                <select name="category" class="custom-select" ng-model="category">
+                <h3><span class="badge badge-pill badge-warning">ROOM</span></h3>
+                <select name="ROOM" class="custom-select" ng-model="ROOM">
                     <option id="Motorcycle" value="Motorcycle">Motorcycle</option>
                     <option id="SUV" value="SUV">SUV</option>
                     <option id="Super" value="Super">Super</option>
@@ -46,8 +46,8 @@
 
             <div class="col-4">
                 <br>
-                <h3><span class="badge badge-pill badge-warning">BRAND</span></h3>
-                <select name="brand" class="custom-select" ng-model="brand">
+                <h3><span class="badge badge-pill badge-warning">Product</span></h3>
+                <select name="Product" class="custom-select" ng-model="Product">
                     <option id="BMW" value="BMW">BMW</option>
                     <option id="Yamaha" value="Yamaha">Yamaha</option>
                     <option id="HonDa" value="HonDa">HonDa</option>
@@ -67,8 +67,8 @@
             </div>
             <div class="col-4">
                 <br>
-                <h3><span class="badge badge-pill badge-warning">COLOR</span></h3>
-                <select name="fanColor" class="custom-select" ng-model="fanColor">
+                <h3><span class="badge badge-pill badge-warning">Material</span></h3>
+                <select name="fanMaterial" class="custom-select" ng-model="fanMaterial">
                     <option id="fanSilver" value="fanSilver">Silver</option>
                     <option id="fanWhite" value="fanWhite">White</option>
                     <option id="fanBlack" value="fanBlack">Black</option>
@@ -82,12 +82,12 @@
     <hr style="border-width:0.25rem;">
     <div class="card-deck" class="row">
         <div class="product"
-            ng-repeat="item in listProduct | filter:test | filter:brand | filter:category | filter:fanColor | orderBy:sortCode"
+            ng-repeat="item in listProduct | filter:test | filter:Product | filter:ROOM | filter:fanMaterial | orderBy:sortCode"
             ng-click=show(item.id) data-toggle="modal" data-target="#myModal">
             <div class="card" style="width: 16rem;">
                 <div class="card-header">
                     <h3 class="card-title text-center"><span
-                            class="badge badge-pill badge-info">{{item.category}}</span></h3>
+                            class="badge badge-pill badge-info">{{item.ROOM}}</span></h3>
                 </div>
 
                 <div>
@@ -129,17 +129,17 @@
                             </div>
                             <div class="col-md-6">
                                 <h2 class="text-black-1 text-center">{{title}}</h2>
-                                <h4 class="brand-name-2"><span class="badge badge-warning">Price</span><span
+                                <h4 class="Product-name-2"><span class="badge badge-warning">Price</span><span
                                         class="badge badge-success">{{price}}$</span></h4>
-                                <h4 class="brand-name-2"><span class="badge badge-warning">Brand:</span><span
-                                        class="badge badge-info">{{brand}}</span></h4>
-                                <h4 class="brand-name-2"><span class="badge badge-warning">Category:</span><span
-                                        class="badge badge-info">{{category}}</span></h4>
-                                <h4 class="brand-name-2"><span class="badge badge-warning">Color:</span><span
-                                        class="badge badge-info">{{fanColor}}</span></h4>
+                                <h4 class="Product-name-2"><span class="badge badge-warning">Product:</span><span
+                                        class="badge badge-info">{{Product}}</span></h4>
+                                <h4 class="Product-name-2"><span class="badge badge-warning">ROOM:</span><span
+                                        class="badge badge-info">{{ROOM}}</span></h4>
+                                <h4 class="Product-name-2"><span class="badge badge-warning">Material:</span><span
+                                        class="badge badge-info">{{fanMaterial}}</span></h4>
 
                                 <div role="tabpanel" class="tab-pane active">
-                                    <h4 class="brand-name-2"><span class="badge badge badge-warning">Description:</span>
+                                    <h4 class="Product-name-2"><span class="badge badge badge-warning">Description:</span>
                                     </h4>
                                     <p id="description">{{description}}</p>
                                 </div>
