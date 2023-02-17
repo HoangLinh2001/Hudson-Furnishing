@@ -37,7 +37,6 @@
                 <br>
                 <h3><span class="badge badge-pill badge-warning">ROOM</span></h3>
                 <select name="ROOM" class="custom-select" ng-model="ROOM">
-                    <option id="" value="">None</option>
                     <option id="living room" value="Living room">Living room</option>
                     <option id="Dining room" value="Dining room">Dining room</option>
                     <option id="Working room" value="Working room">Working room</option>
@@ -49,7 +48,6 @@
                 <br>
                 <h3><span class="badge badge-pill badge-warning">Product</span></h3>
                 <select name="Product" class="custom-select" ng-model="Product">
-                    <option id="" value="">None</option>
                     <option id="table" value="table">Table</option>
                     <option id="chair" value="chair">Chair</option>
                     <option id="Bed" value="Bed">Bed</option>
@@ -59,10 +57,9 @@
             <div class="col-4">
                 <br>
                 <h3><span class="badge badge-pill badge-warning">Material</span></h3>
-                <select name="material" class="custom-select" ng-model="material">
-                    <option id="" value="">None</option>
+                <select name="Material" class="custom-select" ng-model="Material">
                     <option id="Wood" value="Wood">Wood</option>
-                    <option id="metal" value="metal">Black</option>
+                    <option id="metal" value="metal">Metal</option>
                 </select>
             </div>
 
@@ -71,7 +68,7 @@
     <hr style="border-width:0.25rem;">
     <div class="card-deck" class="row">
         <div class="product"
-            ng-repeat="item in listProduct | filter:test | filter:Product | filter:ROOM | filter:fanMaterial | orderBy:sortCode"
+            ng-repeat="item in listProduct | filter:test | filter:Product | filter:ROOM | filter:Material | orderBy:sortCode"
             ng-click=show(item.id) data-toggle="modal" data-target="#myModal">
             <div class="card" style="width: 16rem;">
                 <div class="card-header">
@@ -125,7 +122,7 @@
                                 <h4 class="Product-name-2"><span class="badge badge-warning">ROOM:</span><span
                                         class="badge badge-info">{{ROOM}}</span></h4>
                                 <h4 class="Product-name-2"><span class="badge badge-warning">Material:</span><span
-                                        class="badge badge-info">{{fanMaterial}}</span></h4>
+                                        class="badge badge-info">{{Material}}</span></h4>
 
                                 <div role="tabpanel" class="tab-pane active">
                                     <h4 class="Product-name-2"><span class="badge badge badge-warning">Description:</span>
