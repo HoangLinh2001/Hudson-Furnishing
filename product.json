@@ -202,7 +202,7 @@
             "Product":"Table",
             "picture": "imgproduct/WORKING ROOM/ban1.jpg",
             "title": "Desk",
-            "ROOM": "WORKING ROOM",
+            "ROOM": "HOME OFFICE",
             "Material": "Wood",
             "price": 319,
             "description": [""]
@@ -212,7 +212,7 @@
             "Product":"Table",
             "picture": "imgproduct/WORKING ROOM/ban2.jpg",
             "title": "Desk",
-            "ROOM": "WORKING ROOM",
+            "ROOM": "HOME OFFICE",
             "Material": "Wood",
             "price": 319,
             "description": [""]
@@ -222,7 +222,7 @@
             "Product":"Table",
             "picture": "imgproduct/WORKING ROOM/ban3.jpg",
             "title": "Desk",
-            "ROOM": "WORKING ROOM",
+            "ROOM": "HOME OFFICE",
             "Material": "Wood",
             "price": 319,
             "description": [""]
@@ -232,7 +232,7 @@
             "Product":"Table",
             "picture": "imgproduct/WORKING ROOM/ban4.jpg",
             "title": "Desk",
-            "ROOM": "WORKING ROOM",
+            "ROOM": "HOME OFFICE",
             "Material": "Wood",
             "price": 319,
             "description": [""]
@@ -242,7 +242,7 @@
             "Product":"Table",
             "picture": "imgproduct/WORKING ROOM/ban5.jpg",
             "title": "Desk",
-            "ROOM": "WORKING ROOM",
+            "ROOM": "HOME OFFICE",
             "Material": "Wood",
             "price": 319,
             "description": [""]
