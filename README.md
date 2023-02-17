@@ -17,7 +17,7 @@ eProject document at: https://github.com/HoangLinh2001/HoangLinh2001.github.io/t
 
 ============================
 
-eProject published at: https://hoanglinh2001.github.io/index.html#!/
+eProject published at: https://hoanglinh2001.github.io/Hudson-Furnishing
 
 
 Thanks you for spending your time to look at our work.
