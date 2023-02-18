@@ -11,16 +11,7 @@ header   a, button{
     font-size: 20px;
     color: #edf0f1;
     text-decoration: none;
-    padding: 0px 5px;
-     
-}
-@media screen and (max-width: 740px) {
-    .header {
-        display:block;
-        grid-gap: 5px;
-        grid-template-columns: repeat(auto-fit, 100px);
-        grid-template-rows: repeat(2, 100px);
-    }
+    padding: 0px 5px; 
 }
 h1 {
     font-family: "Montserrat",sans-serif;
@@ -154,7 +145,7 @@ html{
 .rep button:hover{
     background-color: #061121;
     font-size: larger;
-    /* border-style: none; */
+    border-style: none;
 }
 /* footer */
 .footer{
@@ -282,5 +273,3 @@ ul{
     margin: 0px 0px;
     color: white;
 }
-
-    
