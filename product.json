@@ -6,7 +6,7 @@
             "title": "TV Table",
             "ROOM": "LIVING ROOM",
             "Material": "Wood",
-            "price": 2000,
+            "price": 206,
             "description": [""]
         },
         {   "id":2,
@@ -15,7 +15,7 @@
             "title": "TV Table",
             "ROOM": "LIVING ROOM",
             "Material": "Wood",
-            "price": 2000,
+            "price": 358,
             "description": [""]
         },
         {   "id":3,
@@ -24,7 +24,7 @@
             "title": "Tea Table",
             "ROOM": "LIVING ROOM",
             "Material": "Wood",
-            "price": 2000,
+            "price": 963,
             "description": [""]
         },
         {
@@ -34,7 +34,7 @@
             "title": "Tea Table",
             "ROOM": "LIVING ROOM",
             "Material": "Metal",
-            "price": 269,
+            "price": 159,
             "description": [""]
         },
         {
@@ -44,7 +44,7 @@
             "title": "Tea Table",
             "ROOM": "LIVING ROOM",
             "Material": "Metal",
-            "price": 319,
+            "price": 581,
             "description": [""]
         },
         {
@@ -54,7 +54,7 @@
             "title": "sofa",
             "ROOM": "LIVING ROOM",
             "Material": "Wood",
-            "price": 319,
+            "price": 258,
             "description": [""]
         },
         {
@@ -64,7 +64,7 @@
             "title": "sofa",
             "ROOM": "LIVING ROOM",
             "Material": "Wood",
-            "price": 319,
+            "price": 147,
             "description": [""]
         },
         {
@@ -74,7 +74,7 @@
             "title": "sofa",
             "ROOM": "LIVING ROOM",
             "Material": "Wood",
-            "price": 319,
+            "price": 693,
             "description": [""]
         },
         {
@@ -84,7 +84,7 @@
             "title": "sofa",
             "ROOM": "LIVING ROOM",
             "Material": "Metal",
-            "price": 319,
+            "price": 600,
             "description": [""]
         },
         {
@@ -94,7 +94,7 @@
             "title": "sofa",
             "ROOM": "LIVING ROOM",
             "Material": "Metal",
-            "price": 319,
+            "price": 256,
             "description": [""]
         },
         {
@@ -104,7 +104,7 @@
             "title": "Dinner table",
             "ROOM": "DINING ROOM",
             "Material": "Metal",
-            "price": 319,
+            "price": 564,
             "description": [""]
         },
         {
@@ -114,7 +114,7 @@
             "title": "Dinner table",
             "ROOM": "DINING ROOM",
             "Material": "Wood",
-            "price": 319,
+            "price": 789,
             "description": [""]
         },
         {
@@ -124,7 +124,7 @@
             "title": "Dinner table",
             "ROOM": "DINING ROOM",
             "Material": "Wood",
-            "price": 319,
+            "price": 159,
             "description": [""]
         },
         {
@@ -134,7 +134,7 @@
             "title": "Dinner table",
             "ROOM": "DINING ROOM",
             "Material": "Wood",
-            "price": 319,
+            "price": 555,
             "description": [""]
         },
         {
@@ -144,7 +144,7 @@
             "title": "Dinner table",
             "ROOM": "DINING ROOM",
             "Material": "Wood",
-            "price": 319,
+            "price": 888,
             "description": [""]
         },
         {
@@ -154,7 +154,7 @@
             "title": "Dining chairs",
             "ROOM": "DINING ROOM",
             "Material": "Wood",
-            "price": 319,
+            "price": 333,
             "description": [""]
         },
         {
@@ -164,7 +164,7 @@
             "title": "Dining chairs",
             "ROOM": "DINING ROOM",
             "Material": "Wood",
-            "price": 319,
+            "price": 493,
             "description": [""]
         },
         {
@@ -174,7 +174,7 @@
             "title": "Dining chairs",
             "ROOM": "DINING ROOM",
             "Material": "Metal",
-            "price": 319,
+            "price": 761,
             "description": [""]
         },
         {
@@ -184,7 +184,7 @@
             "title": "Dining chairs",
             "ROOM": "DINING ROOM",
             "Material": "Wood",
-            "price": 319,
+            "price": 900,
             "description": [""]
         },
         {
@@ -194,7 +194,7 @@
             "title": "Dining chairs",
             "ROOM": "DINING ROOM",
             "Material": "Metal",
-            "price": 319,
+            "price": 156,
             "description": [""]
         },
         {
@@ -204,7 +204,7 @@
             "title": "Desk",
             "ROOM": "HOME OFFICE",
             "Material": "Wood",
-            "price": 319,
+            "price": 469,
             "description": [""]
         },
         {
@@ -214,7 +214,7 @@
             "title": "Desk",
             "ROOM": "HOME OFFICE",
             "Material": "Wood",
-            "price": 319,
+            "price": 712,
             "description": [""]
         },
         {
@@ -224,7 +224,7 @@
             "title": "Desk",
             "ROOM": "HOME OFFICE",
             "Material": "Wood",
-            "price": 319,
+            "price": 120,
             "description": [""]
         },
         {
@@ -244,7 +244,7 @@
             "title": "Desk",
             "ROOM": "HOME OFFICE",
             "Material": "Wood",
-            "price": 319,
+            "price": 200,
             "description": [""]
         },
         {
@@ -254,7 +254,7 @@
             "title": "Big bed",
             "ROOM": "BEDROOM",
             "Material": "Wood",
-            "price": 319,
+            "price": 693,
             "description": [""]
         },
         {
@@ -264,7 +264,7 @@
             "title": "Big bed",
             "ROOM": "BEDROOM",
             "Material": "Wood",
-            "price": 319,
+            "price": 658,
             "description": [""]
         },
         {
@@ -274,7 +274,7 @@
             "title": "Big bed",
             "ROOM": "BEDROOM",
             "Material": "Wood",
-            "price": 319,
+            "price": 348,
             "description": [""]
         },
         {
@@ -284,7 +284,7 @@
             "title": "Big bed",
             "ROOM": "BEDROOM",
             "Material": "Wood",
-            "price": 319,
+            "price": 468,
             "description": [""]
         },
         {
@@ -294,7 +294,7 @@
             "title": "Big bed",
             "ROOM": "BEDROOM",
             "Material": "Wood",
-            "price": 319,
+            "price": 554,
             "description": [""]
         },
         {
@@ -304,7 +304,7 @@
             "title": "three door wardrobe",
             "ROOM": "BEDROOM",
             "Material": "Wood",
-            "price": 319,
+            "price": 169,
             "description": [""]
         },
         {
@@ -314,7 +314,7 @@
             "title": "two door wardrobe",
             "ROOM": "BEDROOM",
             "Material": "Wood",
-            "price": 319,
+            "price": 168,
             "description": [""]
         },
         {
@@ -324,7 +324,7 @@
             "title": "three door wardrobe",
             "ROOM": "BEDROOM",
             "Material": "Metal",
-            "price": 319,
+            "price": 596,
             "description": [""]
         },
         {
@@ -334,7 +334,7 @@
             "title": "two door wardrobe",
             "ROOM": "BEDROOM",
             "Material": "Wood",
-            "price": 319,
+            "price": 509,
             "description": [""]
         },
         {
@@ -344,7 +344,7 @@
             "title": "three door wardrobe",
             "ROOM": "BEDROOM",
             "Material": "Metal",
-            "price": 319,
+            "price": 405,
             "description": [""]
         }
     ]
